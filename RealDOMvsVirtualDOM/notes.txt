@@ -1,0 +1,12 @@
+Real DOM vs Virtual DOM
+
+-Real DOM:
+    HTML tree sturcture ko Real DOM kehte hain, but the problem is jab humein Real DOM me koi ek element change karna ho to kisi button click par then poora webpage reload hota hai sirf ek element ko update karne ke liye.
+
+- Virtual DOM:
+    Ye DOM Real DOM ki copy hota hai, Virtual DOM me agar humein kisi ek element ko update karna hota hai to wo poora webpage 
+    realod nhi karega balke sirf usi particular element ko update kar dega. 
+
+JSX:
+    JSX JavaScript and HTML ka mixture hota hai, iski help se JS me humein HTML likhne me zyada complexity nhi hoti.
+    Aage jaake hum JSX files me kaam karenge to iska pata hona bhi zaroori hai
