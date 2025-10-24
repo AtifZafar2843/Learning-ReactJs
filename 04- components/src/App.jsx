@@ -1,14 +1,12 @@
 import React from 'react'
+import NavBar from './components/NavBar.jsx';
+import Card from './components/card.jsx';
 
 const App = () => {
   return (
     <>
-      <div className="container">
-        <div className="card">
-          <h1>This is a card</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iusto voluptatum magnam obcaecati molestias accusantium recusandae eligendi dolore quia ipsam?</p>
-        </div>
-      </div>
+      <NavBar />
+      <Card />
     </>
   )
 }

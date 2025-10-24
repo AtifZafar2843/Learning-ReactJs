@@ -28,3 +28,26 @@ body, html {
   padding: 20px;
   border-radius: 20px;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+  padding: 0 20px;
+  background-color: blue;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.items a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
