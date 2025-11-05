@@ -11,6 +11,11 @@ html, body {
   background-color: #222;
 }
 
+#root {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   background-color: #f8f7f7;
   border-radius: 20px;
@@ -18,9 +23,6 @@ html, body {
   width: 250px;
   margin: 20px;
   padding: 8px 20px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
 }
 
 .upper {
