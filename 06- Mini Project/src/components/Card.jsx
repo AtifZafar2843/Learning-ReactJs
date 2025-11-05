@@ -1,13 +1,14 @@
 import React from 'react'
 import 'remixicon/fonts/remixicon.css'
 
-const Card = () => {
+const Card = (props) => {
+
   return (
     <>
         <div className="card">
           <div className="upper">
             <div className="logo">
-              <img src="https://cdn.freebiesupply.com/images/large/2x/airbnb-logo.png" alt="airbnb logo" />
+              <img src={props.brandLogo} alt="airbnb logo" />
             </div>
             <div className="sv-btn">
               <button>Save</button>
@@ -16,18 +17,18 @@ const Card = () => {
           </div>
           <div className="center">
             <div className="center-top">
-              <h3>Airbnb</h3><span>5 days ago</span>
+              <h3>{props.company}</h3><span>{props.datePosted}</span>
             </div>
-            <h2>Junior UI/UX Designer</h2>
+            <h2>{props.post}</h2>
             <div className="tag">
-              <h4>Contract</h4>
-              <h4>Remote</h4>
+              <h4>{props.tag1}</h4>
+              <h4>{props.tag2}</h4>
             </div>
           </div>
           <div className="bottom">
             <div className="bottom-left">
-              <h5>$100/hr</h5>
-              <h6>Delhi, India</h6>
+              <h5>{props.pay}</h5>
+              <h6>{props.location}</h6>
             </div>
             <div className="bottom-right">
               <button>Apply Now</button>
