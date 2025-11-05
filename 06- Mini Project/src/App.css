@@ -9,11 +9,134 @@ html, body {
   height: 100%;
   width: 100%;
   background-color: #222;
-  color: white;
 }
 
 .card {
-  background-color: #eee5e5;
+  background-color: #f8f7f7;
   border-radius: 20px;
-  
+  height: 300px;
+  width: 250px;
+  margin: 20px;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.upper {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  padding: 5px;
+  border: 0.6px solid rgba(192, 192, 192, 0.438);
+  border-radius: 50%;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sv-btn {
+  background-color: white;
+  padding: 2px 5px;
+  color: grey;
+  border: 0.6px solid rgba(192, 192, 192, 0.438);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sv-btn button {
+  border: none;
+  background-color: transparent;
+  font-size: 10px;
+  color: grey;
+}
+
+.sv-btn i {
+  font-size: 10px;
+  color: grey;
+  margin-left: 3px;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+.center-top {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.center-top h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.center-top span {
+  font-size: 8px;
+  font-weight: 400;
+}
+
+.center h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 4px 0;
+}
+
+.tag {
+  display: flex;
+  gap: 5px;
+  margin-top: 2px;
+}
+
+.tag h4 {
+  font-size: 10px;
+  font-weight: 500;
+  background-color: rgba(228, 226, 226, 0.76);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 0.6px solid rgba(192, 192, 192, 0.438);
+  margin-top: 70px;
+  padding-top: 20px;
+}
+
+.bottom-left h5{
+  font-weight: 600;
+  color: rgb(43, 43, 43);
+  font-size: 15px;
+}
+
+.bottom-left h6 {
+  font-size: 10px;
+  font-weight: 400;
+  color: rgba(167, 167, 167, 0.692);
+}
+
+.bottom-right button {
+  background-color: rgb(41, 41, 41);
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  font-size: 10px;
+  border-radius: 5px;
 }
