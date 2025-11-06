@@ -141,11 +141,6 @@ Top part me logo aur save button,
 Center part me post details,
 Bottom part me pay aur location details.
 
-**Tips:**
-
-* `.card-container` ke andar flex/grid layout use karo taaki sab cards ek saath line me aayein.
-* Hover effect aur transitions use karke UI aur polish kar sakte ho.
-
 ---
 
 ## 🧩 Concepts Covered
