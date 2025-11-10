@@ -163,6 +163,16 @@ App.jsx
    ↓
 Section1.jsx
    |
+   |
+   |
+   ↓
+MainContent.jsx
+   |
+   |
+   |
+   ↓
+RightContent.jsx
+   |
    |===> map user[]
    |
    ↓
