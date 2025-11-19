@@ -3,13 +3,16 @@ import React, { useState } from "react";
 const App = () => {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
+  const [task, setTask] = useState([]);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log("Submitted");
-    console.log(title, detail);
+    const copyTask = [...task];
+    copyTask.push({ title, detail });
+    setTask(copyTask);
+
     setTitle("");
-    setDetail("")
+    setDetail("");
   };
 
   return (
@@ -43,7 +46,7 @@ const App = () => {
               setDetail(e.target.value);
             }}
           ></textarea>
-          <button className="bg-black text-white py-2 w-full px-6 rounded-lg">
+          <button className="bg-black active:scale-90 text-white py-2 w-full px-6 rounded-lg">
             Add Note
           </button>
         </form>
@@ -52,10 +55,15 @@ const App = () => {
           src="https://cdn-icons-png.flaticon.com/512/4021/4021693.png"
         />
       </div>
-      <div className="h-1/2 flex gap-10 py-10 px-20">
-        <div className="h-40 w-40 bg-gray-500"></div>
-        <div className="h-40 w-40 bg-gray-500"></div>
-        <div className="h-40 w-40 bg-gray-500"></div>
+      <div className="h-1/2 flex gap-10 py-10 px-20 flex-wrap">
+        {task.map(function (elem, idx) {
+          return (
+            <div key={idx} className="h-60 w-40 bg-black text-white rounded-lg p-4">
+              <h3 className="font-semibold text-2xl">{elem.title}</h3>
+              <p className="text-grey-400">{elem.detail}</p>
+            </div>
+          );
+        })}
       </div>
     </>
   );
