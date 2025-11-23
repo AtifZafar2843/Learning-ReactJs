@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const App = () => {
   const [title, setTitle] = useState("");
   const [detail, setDetail] = useState("");
+
   const [task, setTask] = useState([]);
 
   const submitHandler = (e) => {
@@ -15,6 +16,12 @@ const App = () => {
     setDetail("");
   };
 
+  const deleteTask = (idx) => {
+    console.log("deleted");
+    const copyTask = [...task]
+    copyTask.splice(idx, 1)
+    setTask(copyTask)
+  }
   return (
     <>
       <div className="text-center p-5">
@@ -58,10 +65,22 @@ const App = () => {
       <div className="h-1/2 flex gap-10 py-10 px-20 flex-wrap">
         {task.map(function (elem, idx) {
           return (
-            <div key={idx} className="h-60 w-40 bg-black text-white rounded-lg p-4">
-              <h3 className="font-semibold text-2xl">{elem.title}</h3>
-              <p className="text-grey-400">{elem.detail}</p>
-            </div>
+              <div
+                key={idx}
+                 className="h-60 w-40 bg-black text-white rounded-lg p-4 flex flex-col justify-between"
+              >
+                <div>
+                  <h3 className="font-semibold text-2xl">{elem.title}</h3>
+                  <p className="text-grey-400">{elem.detail}</p>
+                </div>
+                <div>
+                <button
+                  onClick={() => {
+                    deleteTask(idx);
+                  }}
+                  className="bg-red-600 text-white p-2 rounded-lg active:scale-90">Delete Note</button>
+                </div>
+              </div>
           );
         })}
       </div>
