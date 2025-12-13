@@ -12,12 +12,14 @@ import Womens from "./Pages/Womens";
 import Kids from "./Pages/Kids";
 import Courses from "./Pages/Courses";
 import CourseDetails from "./Pages/CourseDetails";
+import Navbar2 from "./Components/Navbar2";
 
 function App() {
   return (
     <>
       <div className="h-screen bg-black text-white">
         <Navbar />
+        <Navbar2 />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
