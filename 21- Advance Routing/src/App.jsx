@@ -10,6 +10,8 @@ import NotFoundPage from "./Pages/NotFoundPage";
 import Mens from "./Pages/Mens";
 import Womens from "./Pages/Womens";
 import Kids from "./Pages/Kids";
+import Courses from "./Pages/Courses";
+import CourseDetails from "./Pages/CourseDetails";
 
 function App() {
   return (
@@ -25,6 +27,9 @@ function App() {
             <Route path="womens" element={<Womens />} />
             <Route path="kids" element={<Kids />} />
           </Route>
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/:id" element={<CourseDetails />} />
+
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
