@@ -1,14 +1,11 @@
-import React, { useState } from 'react'
+import Button from './Components/Button'
 import Navbar from './Components/Navbar'
 
 const App = () => {
-  const [theme, setTheme] = useState('light')
   return (
     <div>
-      <Navbar theme={theme}>
-        <h2>this is navbar</h2>
-        <h2>bohot acha navbar</h2>
-        </Navbar>
+      <Navbar />
+      <Button />
     </div>
   )
 }
